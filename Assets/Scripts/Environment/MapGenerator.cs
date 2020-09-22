@@ -511,10 +511,8 @@ public class MapGenerator : MonoBehaviour {
 	class Room : IComparable<Room>{
 		public List<Coord> tiles, edgeTiles;
 		public List<Room> connectedRooms;
-		public bool isAccessible, main, hasPassage;
+		public bool isAccessible, main;
 		public int roomSize;
-		float bestDistance = 0;
-		Coord bestTileA = new Coord();
 
 		public Room() {
 
